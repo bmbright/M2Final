@@ -1,0 +1,116 @@
+/* Page Background */
+body{
+  background-color:#F7F1DE;
+  font-family: Verdana, sans-serif;
+}
+
+/* Main Header - Pets with Human Names */
+header{
+  background-color:#222E50;
+}
+
+/* Main Header - Logo */
+.logo{
+  background-color:#F7F1DE;
+  text-align: center;
+}
+
+header h1{
+  text-align: center;
+  background-color:#222E50;
+  font-size: 2.5em;
+  color:white;
+}
+
+/* Page Title - Home/About/etc. */
+.page-header header{
+  color:#32021F;
+  text-align: center;
+  background-color: #F7F1DE;
+}
+
+.page-header header h2{
+  color:#32021F;
+  text-shadow: 2px 1px #62043C;
+  text-align: center;
+}
+
+.page-header h3{
+  color:#62043C;
+  text-align: center;
+}
+
+/* Navigation Bar */
+.nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
+}
+.nav-centered ul li{
+  display: list-item;
+  background-color:#222E50;
+  color:white;
+  margin:0px 25 0px 25;
+}
+
+/* Navigation Bar Items */
+li a {
+  display: inline-block;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Navigation Bar Hover Option */
+li a:hover {
+  background-color: #9D96B8;
+}
+
+/* Dotted Line Break */
+hr {
+  border-top: 3px dotted black;
+}
+
+/* About Us Page */
+.aboutus-container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+ }
+
+/* Image Sizing, Entire Website */
+img {
+  max-height:300px;
+}
+
+/* Table Formating */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.col1 {
+  width: 20%;
+}
+.col2 {
+  width: 80%;
+}
+
+#warn {
+  display: none;
+}
+
+#colorPickerTable {
+  width: 90%;
+}
+
+
+/* Footer */
+footer {
+  background-color: #F3EACE;
+  text-align: center;
+}
