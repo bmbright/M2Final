@@ -32,7 +32,10 @@
         </table>
             
         <script type= "text/javascript">
-            let previousColorValue;
+        </script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+              let previousColorValue;
             function previousColor(ID){
                 var oneDropdown = document.getElementById(ID);
                 previousDropdownId = ID;
@@ -60,12 +63,16 @@
                 var colorPicker = document.getElementById(ID);
                 var selectedColor = colorPicker.value;
                 var p = colorPicker.parentNode.nextElementSibling.querySelector('p');
-                p.style.backgroundColor = selectedColor;    
+                p.style.backgroundColor = selectedColor;
+                var IDArray = $('#colorPalette'+ID).text().split(",");
+                console.log("Drop Array: " + IDArray);
+                for(var i = 0; i < IDArray.length; i++){
+                    var temp = IDArray[i];
+                    $('#'+temp).css("background-color",selectedColor);
+                }
+                  
                 return true;
             }
-        </script>
-        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script>
             var selectedColor;
             function selectRadio(){
             selectedColor = $("input[name='color_radio']:checked").closest("td").find("select").val();
